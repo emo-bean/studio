@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@font-face {
+    font-family: newyork;
+    src: url(fonts/NewYork\ PERSONAL\ USE.otf);
+}
+@font-face {
+    font-family: rottaries;
+    src: url(fonts/Rottaries-Regular.otf);
+}
 body {
     background:
 #C9FF72;
@@ -52,13 +59,15 @@ nav a.active, nav a:hover {
 h1 {
     color: 
 #C9FF72;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: newyork, cursive;
+    font-weight: 100;
     white-space: nowrap;
     margin:0;
     padding:10px 40px 0 40px;
 }
 h2 {color: 
 #C9FF72;
+    font-family: rottaries;
    margin:0;
     padding:0px 40px;
    white-space: nowrap;}
