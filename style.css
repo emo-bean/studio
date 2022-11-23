@@ -1,122 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
-    font-family: newyork;
-    src: url(fonts/NewYork\ PERSONAL\ USE.otf);
+  font-family: newyork;
+  src: url(fonts/NewYork\ PERSONAL\ USE.otf);
 }
 @font-face {
-    font-family: rottaries;
-    src: url(fonts/Rottaries-Regular.otf);
+  font-family: rottaries;
+  src: url(fonts/Rottaries-Regular.otf);
 }
 body {
-    background:
-#C9FF72;
-    margin:0;
+  background: #c9ff72;
+  margin: 0;
 }
 header {
-    background:black;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    min-height:120px;
-    display:flex;
-    justify-content: space-between;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
+  background: black;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  min-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
 }
-header h2{
-  padding:0px 40px;
+header h2 {
+  padding: 0px 40px;
 }
-header a{
-    color: 
-#C9FF72;
-    text-decoration:none;
+header a {
+  color: #c9ff72;
+  text-decoration: none;
 }
 header .logotype {
-    flex:75%;
+  flex: 75%;
 }
 header nav {
-    flex:25%;
-    padding-right:60px;
-    margin-top:80px;
+  flex: 25%;
+  padding-right: 60px;
+  margin-top: 80px;
 }
 nav ul {
-    margin:0;
-    display:flex;
-    list-style:none;
-      
+  margin: 0;
+  display: flex;
+  list-style: none;
 }
 nav li {
-    padding-left:20px;
-    white-space:nowrap;
+  padding-left: 20px;
+  white-space: nowrap;
 }
 nav a {
-    padding:8px 16px;
-    border-radius:18px;
-    border:1px solid black;
+  padding: 8px 16px;
+  border-radius: 18px;
+  border: 1px solid black;
 }
-nav a.active, nav a:hover {
-    border:1px solid #C9FF72;     
+nav a.active,
+nav a:hover {
+  border: 1px solid #c9ff72;
 }
-.button, .button-left, .button-right, .button-right-dark{
-  background: #C9FF72;
+.button,
+.button-left,
+.button-right,
+.button-right-dark {
+  background: #c9ff72;
   padding: 15px;
   border-radius: 30px;
   text-align: center;
 }
-.button-left{
+.button-left {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   text-align: left;
   padding-left: 10px;
 }
-.button-right, .button-right-dark{
+.button-right,
+.button-right-dark {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   text-align: right;
   padding-right: 10px;
 }
-.button-right-dark{
-  border: 1px solid #C9FF72;
+.button-right-dark {
+  border: 1px solid #c9ff72;
   background: black;
 }
-.button a, .button-left a, .button-right a, .button-right-dark a{
+.button a,
+.button-left a,
+.button-right a,
+.button-right-dark a {
   text-decoration: none;
 }
-.button h2, .button-left h2, .button-right h2{
+.button h2,
+.button-left h2,
+.button-right h2 {
   color: black;
 }
 .home {
   display: flex;
 }
-.home img{
+.home img {
   width: 60vw;
   border-radius: 400px;
 }
-.home-left{
+.home-left {
   flex: 2;
-  padding: 60px
+  padding: 60px;
 }
-.home-right{
+.home-right {
   padding: 60px;
 }
 h1 {
-    color: #C9FF72;
-    font-family: newyork, cursive;
-    font-weight: 100;
-    white-space: nowrap;
-    margin:0;
-    padding:10px 40px 0 40px;
+  color: #c9ff72;
+  font-family: newyork, cursive;
+  font-weight: 100;
+  white-space: nowrap;
+  margin: 0;
+  padding: 10px 40px 0 40px;
 }
-h2 {color: #C9FF72;
-    font-family: rottaries;
-   margin:0;
-   white-space: nowrap;}
-p, li {
+h2 {
+  color: #c9ff72;
+  font-family: rottaries;
+  margin: 0;
+  white-space: nowrap;
+}
+p,
+li {
   font-family: swear-display, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14pt;
 }
-.homepage{
+.homepage {
   background: black;
 }
 .info {
@@ -129,19 +139,22 @@ p, li {
   background: black;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  min-height:120px;
+  min-height: 120px;
 }
-.info div{
+.info div {
   width: 30vw;
 }
-.info li, footer p, .homepage p, .homepage li{
-  color: #C9FF72;;
+.info li,
+footer p,
+.homepage p,
+.homepage li {
+  color: #c9ff72;
 }
-.right-list{
+.right-list {
   text-align: right;
   list-style-type: none;
 }
-.studios footer{
+.studios footer {
   background: black;
   padding: 20px;
   text-align: right;
@@ -152,31 +165,57 @@ p, li {
   padding-right: 5vw;
   padding-top: 10vh;
 }
-.booking{
+.booking {
   background: black;
 }
-.booking-buttons{
+.booking-buttons {
   display: flex;
   margin: auto;
   justify-content: space-around;
   padding-top: 15vh;
   padding-bottom: 15vh;
 }
-.booking-buttons div{
+.booking-buttons div {
   width: 20vw;
 }
-.booking footer{
-  background: #C9FF72;
+.booking footer {
+  background: #c9ff72;
   display: flex;
   margin: 0px;
   justify-content: space-between;
   padding: 5vh;
 }
-.booking footer p, .booking footer li, .booking footer h2{
+.booking footer p,
+.booking footer li,
+.booking footer h2 {
   color: black;
 }
-   .slider {
-    width: 70vw;
+
+.three-imgs {
+  display: flex;
+  margin: auto;
+}
+.three-imgs img {
+  flex: 1;
+  width: 30vw;
+  border-radius: 50%;
+  padding: 20px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.show-slides {
+  display: none;
+}
+/* slider styles end here */
+@media screen and (max-width: 520px) {
+  .show-slides {
+    display: block;
+  }
+  .three-imgs {
+    display: none;
+  }
+  .slider {
+    width: 100vw;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -184,12 +223,12 @@ p, li {
   .byline {
     text-align: center;
   }
-  
+
   .slide-content .img-content {
-    width: 60%;
+    width: 75%;
     margin: auto;
   }
-  
+
   .slide-content img {
     width: 100%;
     border-radius: 50%;
@@ -198,28 +237,4 @@ p, li {
   .slick-next:before {
     color: #333;
   }
-  .three-imgs {
-    display: flex;
-    margin: auto;
-  }
-  .three-imgs img {
-    flex: 1;
-    width: 30vw;
-    border-radius: 50%;
-    padding: 20px;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-  }
-  .show-slides {
-    display: none;
-  }
-  /* slider styles end here */
-  @media screen and (max-width: 520px) {
-    .show-slides {
-      display: block;
-    }
-    .three-imgs {
-      display: none;
-    }
-  }
-  
+}
