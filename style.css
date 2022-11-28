@@ -83,7 +83,7 @@ nav li {
 }
 nav a {
   padding: 8px 16px;
-  border-radius: 18px;
+  border-radius: 20px;
   border: 1px solid black;
 }
 nav a.active,
@@ -95,8 +95,8 @@ nav a:hover {
 .button-right,
 .button-right-dark {
   background: #c9ff72;
-  padding: 15px;
-  border-radius: 30px;
+  padding: 20px;
+  border-radius: 40px;
   text-align: center;
 }
 .button-left {
