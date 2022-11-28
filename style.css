@@ -7,6 +7,7 @@
   font-family: rottaries;
   src: url(fonts/Rottaries-Regular.otf);
 }
+@media screen and (min-width: 520px) {
 body {
   background: #c9ff72;
   margin: 0;
@@ -21,7 +22,7 @@ header {
   padding-bottom: 5vh;
   padding-top: 5vh;
 }
-header h2 {
+header h4 {
   padding: 0px 40px;
 }
 header a {
@@ -116,11 +117,15 @@ h1 {
   margin: 0;
   padding: 10px 40px 0 40px;
 }
-h2 {
+h2, h4 {
   color: #c9ff72;
   font-family: rottaries;
   margin: 0;
   white-space: nowrap;
+  font-size: 32pt;
+}
+h4 {
+  font-size: 2.5vw;
 }
 p,
 li {
@@ -210,7 +215,239 @@ footer p,
   display: none;
 }
 /* slider styles end here */
+}
 @media screen and (max-width: 520px) {
+  body {
+    background: #c9ff72;
+    margin: 0;
+  }
+  header {
+    background: black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+  }
+  header h4 {
+    padding: 0px 40px;
+  }
+  header a {
+    color: #c9ff72;
+    text-decoration: none;
+  }
+  header .logotype {
+    flex: 75%;
+  }
+  header nav {
+    flex: 25%;
+    flex-direction: column;
+    padding-right: 60px;
+    margin-top: 40px;
+  }
+  nav ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+  }
+  nav li {
+    padding-left: 20px;
+    white-space: nowrap;
+  }
+  nav a {
+    padding: 8px 16px;
+    border-radius: 18px;
+    border: 1px solid black;
+  }
+  nav a.active,
+  nav a:hover {
+    border: 1px solid #c9ff72;
+  }
+  .button,
+  .button-left,
+  .button-right,
+  .button-right-dark, .button-dark {
+    background: #c9ff72;
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
+  }
+  .button-left {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .button-right,
+  .button-right-dark {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-align: right;
+    padding-right: 20px;
+  }
+  .button-right-dark, .button-dark {
+    border: 1px solid #c9ff72;
+    background: black;
+  }
+  .button:hover, .button-left:hover, .button-right:hover{
+    border: 1px solid #c9ff72;
+    background: black;
+  }
+
+  .button a,
+  .button-left a,
+  .button-right a,
+  .button-right-dark a {
+    text-decoration: none;
+  }
+  .button h2,
+  .button-left h2,
+  .button-right h2 {
+    color: black;
+  }
+  .home {
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .home img {
+    width: 365px;
+    height: 337px;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    display: block;
+    margin: auto;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(images/home-mobile.png) no-repeat;
+    padding-left: 365px; /* Equal to width of new image */
+  }
+  .home-left {
+    display: table-footer-group;
+    padding: 60px;
+  }
+  .home-right {
+    display: table-header-group;
+    padding: 60px;
+  }
+  .home-text{
+    padding-top: 5vh;
+  }
+  h1 {
+    color: #c9ff72;
+    font-family: newyork, cursive;
+    font-weight: 100;
+    white-space: nowrap;
+    margin: 0;
+    padding: 10px 40px 0 40px;
+  }
+  h2, h4 {
+    color: #c9ff72;
+    font-family: rottaries;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 16pt;
+  }
+  h4{
+    font-size: 3.5vw;
+  }
+  p,
+  li {
+    font-family: swear-display, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+  }
+  .homepage {
+    background: black;
+  }
+  .info {
+    display: flex;
+    margin: auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    justify-content: space-between;
+    background: black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    min-height: 120px;
+  }
+  .info div {
+    width: 80vw;
+  }
+  .info{
+    display: table;
+  }
+  .106 {
+    display: table-header-group;
+  }
+  .104{
+    display: table-row-group
+  }
+  .108{
+    display: table-footer-group
+  }
+  .studios .button{
+    display: none;
+  }
+  .studios main .button-dark{
+    display: block;
+    width: 40vw;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-decoration: none;
+  }
+  .info li,
+  footer p,
+  .homepage p,
+  .homepage li {
+    color: #c9ff72;
+  }
+  .right-list {
+    text-align: right;
+    list-style-type: none;
+  }
+  .studios footer {
+    background: black;
+    padding: 20px;
+    text-align: right;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 10vh;
+  }
+  .booking {
+    background: black;
+  }
+  .booking-buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 10vw;
+    padding-bottom: 10vh;
+  }
+  .booking-section{
+    width: 80vw;
+    margin-top: 5vh;
+
+  }
+  .booking footer {
+    background: #c9ff72;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: space-between;
+    padding: 5vh;
+  }
+  .booking footer p,
+  .booking footer li,
+  .booking footer h2 {
+    color: black;
+  }
   .show-slides {
     display: block;
   }
