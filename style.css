@@ -105,6 +105,9 @@ nav a:hover {
 .home-right {
   padding: 60px;
 }
+.home-text{
+  padding-top: 5vh;
+}
 h1 {
   color: #c9ff72;
   font-family: newyork, cursive;
