@@ -277,17 +277,18 @@ footer p,
   header nav {
     flex: 40%;
     padding-right: 60px;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   nav ul {
     margin: 0;
+    margin-left: -15vw;
     display: flex;
     flex-direction: column;
     list-style: none;
     text-align: right;
   }
   nav li {
-    font-size: small;
+    font-size: 16pt;
     margin-bottom: 6px;
   }
   nav a {
@@ -462,10 +463,12 @@ footer p,
     margin: 10vw;
     padding-bottom: 10vh;
   }
+  .booking-buttons div{
+    width: 70vw;
+  }
   .booking-section{
     width: 80vw;
     margin-top: 5vh;
-
   }
   .booking footer {
     background: #c9ff72;
