@@ -100,7 +100,7 @@
           <li>cleaning supplies</li>
         </ul>
         <ul class="right-list">
-          <li><br></li>
+          <li><br /></li>
           <li>HOURLY RATES*:</li>
           <li>Before 6pm M-F: $10</li>
           <li>After 6pm M-F: $15</li>
@@ -140,7 +140,7 @@
           <li>cleaning supplies</li>
         </ul>
         <ul class="right-list">
-          <li><br></li>
+          <li><br /></li>
           <li>HOURLY RATES*:</li>
           <li>Before 6pm M-F: $5</li>
           <li>After 6pm M-F: $10</li>
@@ -168,5 +168,55 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <script src="script.js"></script>
+    <script>
+      $(function () {
+        // Your Code from here on down. Don't delete that line above!
+
+        // code for single slider carousel
+        $('.single-slide').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          arrows: false,
+          autoplaySpeed: 3500,
+          infinite: true,
+          dots: true,
+          draggable: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        })
+
+        // End of Your Code . Don't delete that line below!!
+      })
+    </script>
   </body>
 </html>

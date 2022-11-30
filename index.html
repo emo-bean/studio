@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portland Dance Studio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/djk2vya.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body class="homepage">
-<header>
-    <div class="logotype">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/djk2vya.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body class="homepage">
+    <header class="hamburger-nav">
+      <div class="logotype">
         <h1 id="fittext">Portland Dance Studio</h1>
         <h4>Dance & Rehersal Space For Rent</h4>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="studios.html">Studios</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="https://www.supersaas.com/users/new/Portland_Dance_Studio"target=“_blank”>Sign Up</a></li>
+      </div>
+      <nav class="hamburger-helper">&nbsp;</nav>
+      <nav class="nav">
+        <div class="icon">
+          <div class="hamburger"></div>
+        </div>
+        <ul class="menu-mobile">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="studios.html">Studios</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="https://www.supersaas.com/users/new/Portland_Dance_Studio" target="“_blank”">Sign Up</a></li>
         </ul>
-    </nav>
-</header>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+      </nav>
+      <nav class="desktop">
+        <ul class="menu-desktop">
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="studios.html">Studios</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="https://www.supersaas.com/users/new/Portland_Dance_Studio" target="“_blank”">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="jquery.fittext.js"></script>
     <script type="text/javascript">
-        $("#fittext").fitText(1.1, {minFontSize: '32px', maxFontSize: '96px'});
-        $("#fittexth2").fitText(1.2, {minFontSize: '18px', maxFontSize: '32px'});
+      $('#fittext').fitText(1.1, { minFontSize: '28px', maxFontSize: '96px' })
+      $('#fittexth2').fitText(1.2, { minFontSize: '18px', maxFontSize: '32px' })
     </script>
-    <script src="script.js"></script>
-<div class="home">
-    <div class="home-left">
-    <div><img src="images/home-desktop.jpg" alt="long exposure photo of a dancer"></div>
-    <div class="home-text"><h2>Your Perfect Space Awaits</h2><p>Portland Dance Studio is the best dance studio and rehearsal space for rent in PDX! Book a private studio today! Good for dance, yoga, martial arts, burlesque, comedy, drama, and more! Proudly serving Portland, Oregon!
-    </p></div>
-    <div class="socials"></div>
-</div>
-<div class="home-right">
-    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.5116945860514!2d-122.66514148403434!3d45.51990757910164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a0a7bf2916f3%3A0x23343bb60b5f7816!2sPortland%20Dance%20Studio!5e0!3m2!1sen!2sus!4v1669063979905!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         <p>232 SE Oak St, Portland, Oregon 97214 <br>
-        567-393-2623 (56-PDX-DANCE) <br>
-        info@portlanddancestudio.com</p></div>
-    <div class="button-right"><a href="https://www.supersaas.com/users/new/Portland_Dance_Studio"target=“_blank”><h2>JOIN NOW</h2></a></div>
-    <ul>
-        <li>Simple Budget-Friendly Rates</li>
-        <li>Quick Self-Serve Reservation Process</li>
-        <li>Professionally Cleaned Every Day</li>
-    </ul>
-</div>
-</div>
-</body>
+    <div class="home">
+      <div class="home-left">
+        <div><img src="images/home-desktop.jpg" alt="long exposure photo of a dancer" /></div>
+        <div class="home-text">
+          <h2>Your Perfect Space Awaits</h2>
+          <p>Portland Dance Studio is the best dance studio and rehearsal space for rent in PDX! Book a private studio today! Good for dance, yoga, martial arts, burlesque, comedy, drama, and more! Proudly serving Portland, Oregon!</p>
+        </div>
+        <div class="socials"></div>
+      </div>
+      <div class="home-right">
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.5116945860514!2d-122.66514148403434!3d45.51990757910164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a0a7bf2916f3%3A0x23343bb60b5f7816!2sPortland%20Dance%20Studio!5e0!3m2!1sen!2sus!4v1669063979905!5m2!1sen!2sus" width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>
+            232 SE Oak St, Portland, Oregon 97214 <br />
+            567-393-2623 (56-PDX-DANCE) <br />
+            info@portlanddancestudio.com
+          </p>
+        </div>
+        <div class="button-right">
+          <a href="https://www.supersaas.com/users/new/Portland_Dance_Studio" target="“_blank”"><h2>JOIN NOW</h2></a>
+        </div>
+        <ul>
+          <li>Simple Budget-Friendly Rates</li>
+          <li>Quick Self-Serve Reservation Process</li>
+          <li>Professionally Cleaned Every Day</li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

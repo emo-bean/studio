@@ -1,48 +1,18 @@
-$(function () {
-  // Your Code from here on down. Don't delete that line above!
+'use strict'
 
-  // code for single slider carousel
-  $('.single-slide').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    arrows: false,
-    autoplaySpeed: 3500,
-    infinite: true,
-    dots: true,
-    draggable: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          centerMode: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          centerMode: true,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          centerMode: true,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
+function toggleIcon() {
+  $('.icon').on('click', function () {
+    $('.icon').toggleClass('active')
+    $('.menu-mobile').slideToggle(1000)
   })
+}
 
-  // End of Your Code . Don't delete that line below!!
-})
+function closeMobileMenu() {
+  $('.menu-mobile').on('click', 'a', function () {
+    $('.icon').trigger('click')
+  })
+}
+
+//when the page loads call toggleIcon;
+$(toggleIcon)
+$(closeMobileMenu)
