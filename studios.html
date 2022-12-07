@@ -11,20 +11,39 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
   <body class="studios">
-    <header>
+    <header class="hamburger-nav">
       <div class="logotype">
         <h1 id="fittext">Portland Dance Studio</h1>
         <h4>Dance & Rehersal Space For Rent</h4>
       </div>
-      <nav>
-        <ul>
+      <nav class="hamburger-helper">&nbsp;</nav>
+      <nav class="nav">
+        <div class="icon">
+          <div class="hamburger"></div>
+        </div>
+        <ul class="menu-mobile">
           <li><a href="index.html">Home</a></li>
-          <li><a href="" class="active">Studios</a></li>
+          <li><a href="studios.html" class="active">Studios</a></li>
           <li><a href="booking.html">Booking</a></li>
-          <li><a href="https://www.supersaas.com/users/new/Portland_Dance_Studio">Sign Up</a></li>
+          <li><a href="https://www.supersaas.com/users/new/Portland_Dance_Studio" target="“_blank”">Sign Up</a></li>
+        </ul>
+      </nav>
+      <nav class="desktop">
+        <ul class="menu-desktop">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="studios.html" class="active">Studios</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="https://www.supersaas.com/users/new/Portland_Dance_Studio" target="“_blank”">Sign Up</a></li>
         </ul>
       </nav>
     </header>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="jquery.fittext.js"></script>
+    <script type="text/javascript">
+      $('#fittext').fitText(1.1, { minFontSize: '28px', maxFontSize: '96px' })
+      $('#fittexth2').fitText(1.2, { minFontSize: '18px', maxFontSize: '32px' })
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="jquery.fittext.js"></script>
     <script type="text/javascript">
